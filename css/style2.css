@@ -1,0 +1,208 @@
+/* Reset de estilos básicos */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilos gerais */
+/* Parte principal para o menu*/
+body {
+    font-family: Tox Typewriter;
+    background-color: #ffffff;
+    line-height: 1.6;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+/*Estilização das fontes, tamanhos e textos */
+header {
+    background-color: #cd5894b8;/* Estilização para uma cor rosa */
+    color: #fff;/* Estilização para a letras e fontes ficar em branco */
+    text-align: center;/* Estilização para centralizar */
+    padding: 20px 0;/* Estilização do tamanho */
+    
+}
+
+header h1, h2{
+    font-family: 'Playpen Sans';/* Estilização da fonte*/
+    background-color: #cd5894b8;/* Estilização da cor rosa */
+    font-size: 3rem;
+    text-align: center;/* Estilização para centralizar o textos h1, h2*/
+    margin: 34px;
+}
+
+h3{
+    font-size: 50px;/* Estilização do tamanho da fonte*/
+    text-align: center;/* Estilização para centralizar o texto h3 */
+    margin: 0 auto;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* Estilização das fontes*/
+    font-size: 25px;/* Estilização do tamanho das fontes */
+    text-align: justify;
+    margin:34px ;/* Estilização do tamanho dos paragrafos*/
+  }
+
+
+/*Estilização do sobre mim*/
+
+.principal {
+    margin: 0 auto;
+    max-width: 100px;
+    flex-direction: column;/* Estilização da organuzação em colunas */
+}
+
+#sobre {
+    display: grid;/* Estilização do sobre em grid*/
+    grid-template-areas:"titulo titulo" 
+                        "imagem texto"
+                        "imagem texto" ;
+}
+.titulo {
+    grid-area: titulo;
+}
+
+.texto {
+    grid-area: texto;
+    margin: 5%;
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+    grid-area: imagem;
+    margin: 2%;
+}
+.imagem img {
+    width: 80%;
+}
+
+#contato {
+    text-align: center; 
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+}
+/*Estilização dos icones (ferramentas)*/
+
+.ferramentas {
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    flex-direction: column;
+
+}
+.icones {
+    display: flex;
+    width: 100%;
+    padding: auto;
+}
+
+.icones a {
+    font-family: 'Courier New', Courier, monospace;
+    color: #be4dfb;
+}
+
+
+
+
+
+/*Estilização do botão*/
+
+.container-projeto button {
+    background-color: rgba(131, 125, 254, 0.81)b8;
+    color: #000000;
+    padding: 10px 25px;
+    align-items: center;
+    justify-self: center;
+    border-radius: 90px;
+    margin: 2%;
+}
+
+/*Estilização do menu*/
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 70px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/*Estilização da logo*/
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width:150px;
+    height: 150px;
+}
+
+section {
+    padding: 20px;
+}
+/* Estilização da galeria de imagens */
+
+.container-projeto{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.projeto {
+    margin-bottom: 30px;
+}
+
+.projeto img {
+    object-fit: cover;
+    border: 10px solid #cd5894de;
+    box-shadow: 5px 5px 5px #0006;
+    flex-grow: 1;
+    transition: transform 1.2s linear;
+}
+
+.projeto:hover img {
+	transform: scale(1.1);
+}
+
+.projeto:hover  {
+    transition: 1.7s;
+  }
+
+.projeto img {
+    width: 80%;
+    height: auto;
+}
+/*Estilização do footer*/
+
+footer {
+    background-color: #cd5894b8;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
